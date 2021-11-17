@@ -178,7 +178,7 @@ header {
   align-items: center;
   height: 100vh;
   gap: 15px;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .presentacion {
@@ -189,17 +189,20 @@ header {
 .container > div > h1 {
   font-size: xxx-large;
   font-weight: bold;
-  padding: 15px 0px 15px 0px;
+  padding: 15px 0px 2px 0px;
   flex-direction: row;
 }
 
 .container > div > h2 {
   font-size: x-large;
   font-weight: bold;
-  padding: 15px 0px 15px 0px;
+  padding: 3px 0px 15px 0px;
 }
 
 .registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   width: 100%;
 }
 
@@ -223,6 +226,32 @@ button:focus {
 .aboutTheWork {
   height: 100vh;
 }
+.aboutTheWork > h1 {
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.aboutFragments {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5b7373;
+}
+
+.sectionAbout {
+    padding: 10px;
+    margin: 2px;
+    text-align: center;
+}
+
+.sectionAbout > h1 {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.sectionAbout > p {
+    font-size: x-large;
+    font-weight: normal;
+}
 
 /* Footer */
 
@@ -234,7 +263,7 @@ button:focus {
 }
 
 .footer > p {
-  padding: 5px 20px 5px 20px;
+  padding: 5px 20px 5px 5px;
   font-size: large;
   font-weight: bold;
 }

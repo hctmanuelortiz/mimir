@@ -1,9 +1,9 @@
 <body>
-    {{> mainContainer }}
+{{> mainContainer }}
 </body>
 
 <template name="mainContainer">
-    {{> login }}
+    {/*{> home }*/}
     {{> header }}
     {{> welcome }}
     {{> seccion }}
@@ -14,18 +14,45 @@
 <template name="welcome">
     <div class="container">
         <div class="presentacion">
-            <h1> Mimir </h1>
-            <h2> Un servicio de tutorias </h2>
+            <h1> Un lugar para enseñar y aprender </h1>
+            <h2> Mimir es una plataforma donde podra brindar y recibir tutorias,
+                una red social donde puedas ayudar y aprender algo nuevo </h2>
         </div>
         <div class="registro">
-            <button> register </button>
+            <button> crear una cuenta </button>
         </div>
     </div>
 </template>
 
 <template name="seccion">
     <section class="aboutTheWork">
-        <p> ¿que se puede hacer en mimir? </p>
+        <h1> ¿Como funciona Mimir? </h1>
+        <div class="aboutFragments">
+            <div>
+                <div class="sectionAbout">
+                    <h1> Crear una cuenta </h1>
+                    <p> No te tomara mas de 1 minuto crearte una cuenta en Mimir para empezar a usarlo. </p>
+                </div>
+
+                <div class="sectionAbout">
+                    <h1> Completar tu perfil </h1>
+                    <p> Rellena todos los campos para que sea mas facil encontrar lo que buscas </p>
+                </div>
+            </div>
+            <div>
+                <div class="sectionAbout">
+                    <h1> Buscar tutores </h1>
+                    <p> Podras buscar tutores e ir filtrando por materias, distancia, etc. </p>
+                </div>
+
+                <div class="sectionAbout">
+                    <h1> Ser un tutor </h1>
+                    <p> Si lo tuyo es enseñar, podras hacerlo y ayudar a mucha gente con tus conocimientos </p>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 </template>
 
