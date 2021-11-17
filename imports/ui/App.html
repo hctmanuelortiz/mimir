@@ -1,0 +1,45 @@
+<body>
+    {{> mainContainer }}
+</body>
+
+<template name="mainContainer">
+    {{> login }}
+    {{> header }}
+    {{> welcome }}
+    {{> seccion }}
+    {{> footer }}
+</template>
+
+
+<template name="welcome">
+    <div class="container">
+        <div class="presentacion">
+            <h1> Mimir </h1>
+            <h2> Un servicio de tutorias </h2>
+        </div>
+        <div class="registro">
+            <button> register </button>
+        </div>
+    </div>
+</template>
+
+<template name="seccion">
+    <section class="aboutTheWork">
+        <p> ¿que se puede hacer en mimir? </p>
+    </section>
+</template>
+
+<template name="header">
+    <header>
+        <button> Login</button>
+    </header>
+</template>
+
+<template name="footer">
+    <footer class="footer">
+        <p> Sobre mimir </p>
+        <p> sobre el equipo </p>
+        <p> preguntas frecuentes </p>
+        <p> github </p>
+    </footer>
+</template>

@@ -6,6 +6,10 @@ import "./App.html"; // hay que importar la vista donde vamos a trabajar.
 
 import "./Task.js";
 
+import "./home.html";
+
+import "./Login.html";
+
 // VER ESTO: https://blaze-tutorial.meteor.com/simple-todos/06-filter-tasks.html
 
 Template.mainContainer.onCreated(function mainContainerOnCreated() {
