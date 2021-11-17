@@ -1,0 +1,62 @@
+<template name="perfil">
+    {{#if isTutor}}
+        {{> tutor }}
+    {{else}}
+        {{> estudiante }}
+    {{/if}}
+</template>
+
+<template name="tutor">
+    <main>
+        <section>
+            <h2> Tutor/a: Nombre y apellido o username </h2>
+            <h4> Ubicacion </h4>
+        </section>
+        <section>
+            <div class="description">
+                <h3> Descricion </h3>
+                <p>Lorem blablabla</p>
+            </div>
+            <div>
+                <h3> Materias que enseña: </h3>
+                <ul>
+                    <li> Matematicas</li>
+                    <li> Biologia</li>
+                    <li> Lengua</li>
+                    <li> Quimica</li>
+                    <li> Algebra</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</template>
+
+<template name="estudiante">
+    <main>
+        <section>
+            <h2> Nombre y apellido o username </h2>
+            <h4> Ubicacion </h4>
+        </section>
+        <section>
+            <div class="description">
+                <h3> Descricion </h3>
+                <p>Lorem blablabla</p>
+            </div>
+            <div>
+                <h3> Materias que quiere aprender: </h3>
+                <ul>
+                    <li> Matematicas</li>
+                    <li> Biologia</li>
+                    <li> Lengua</li>
+                    <li> Quimica</li>
+                    <li> Algebra</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <p> tutores recientes...</p>
+            </div>
+        </section>
+    </main>
+</template>

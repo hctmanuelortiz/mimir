@@ -1,0 +1,64 @@
+<template name="home">
+    {{#if isTutor}}
+        {{> solicitudRecientes }}
+    {{else}}
+        {{> formTutores }}
+        {{> tutoresTendencia }}
+    {{/if}}
+
+
+</template>
+
+<template name="formTutores">
+    <section>
+        <form onsubmit="">
+            <label for="busqueda"> Ingrese lo que desea buscar: </label>
+            <input type="text" id="busqueda" placeholder="Ingrese su busqueda, ej: Matematicas">
+            <label for="materia"> Materia </label>
+            <input type="checkbox" id="materia" name="paramBusqueda" value="true">
+            <label for="distancia"> Materia </label>
+            <input type="checkbox" id="distancia" name="paramBusqueda" value="true">
+            <button type="submit"> buscar </button>
+        </form>
+    </section>
+
+</template>
+
+<template name="tutoresTendencia">
+    <section>
+        <div>
+            <div>
+                <h2> Nombre y apellido </h2>
+            </div>
+            <div>
+                <p>Puntaje:</p>
+            </div>
+            <div>
+                <p> Materias que enseña </p>
+            </div>
+            <div>
+                <button> enviar solicitud </button>
+            </div>
+
+        </div>
+    </section>
+</template>
+
+<template name="solicitudRecientes">
+    <section>
+        <!-- Aca va a ir un loop -->
+        <div>
+            <div>
+                <p>Nombre y apellido o username</p>
+            </div>
+            <div>
+                <p>Materias que quiere aprender</p>
+            </div>
+            <div>
+                <button> Aceptar </button>
+                <button> Rechazar </button>
+            </div>
+        </div>
+    </section>
+</template>
+
